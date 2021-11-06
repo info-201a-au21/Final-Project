@@ -1,6 +1,6 @@
 # **Group Proposal**
 
-# Interested:
+## Interested
 
 **Why are you interested in this field/domain?**
 
@@ -34,9 +34,9 @@
 2. The number of casualties and property losses caused by the disaster (region, time)
 3. Different disasters usually occur in which country
 
-# Finding Data
+## Finding Data
 
-Where did you download the data (e.g., a web URL)?
+**Where did you download the data (e.g., a web URL)?**
 https://www.kaggle.com/noaa/hurricane-database
 https://www.kaggle.com/usgs/earthquake-database
 https://www.kaggle.com/sobhanmoosavi/us-weather-events
@@ -44,14 +44,14 @@ https://www.kaggle.com/sobhanmoosavi/us-weather-events
 **How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**
   - The dates are collected by researchers to analyze the appearance of earthquakes and weather events. Both databases of hurricanes (NOAA) and earthquakes (US geology survey) are made by officials. However, the database about US weather events is made by the individual (Sobhan Moosavi). All of the record special conditions that happen in a limited time period, which help researchers to examine the frequency, duration, and intensity of events.
 
-**Hurricanes and Typhoons, 1851-2014**
+### **Hurricanes and Typhoons, 1851-2014**
 
 **How many observations (rows) are in your data?**
- - In “atlantic.csv”, 49105 observations. In “pacific.csv”, 26137 observations.
+ - In “atlantic.csv”, **49105** observations. In “pacific.csv”, **26137** observations.
 
 **How many features (columns) are in the data?**
 
- - In “atlantic.csv”, 22 features. In “pacific.csv”, 22 features.
+ - In “atlantic.csv”, **22** features. In “pacific.csv”, **22** features.
 
 **What questions (from above) can be answered using the data in this dataset?**
 
@@ -60,27 +60,27 @@ https://www.kaggle.com/sobhanmoosavi/us-weather-events
 
 
 
-# **Significant Earthquakes, 1965-2016**
+### **Significant Earthquakes, 1965-2016**
 **How many observations (rows) are in your data?**
 
- - In “database.csv”, 23412 observations.
+ - In “database.csv”, **23412** observations.
 
 **How many features (columns) are in the data?**
 
- - In “database.csv”, 21 features.
+ - In “database.csv”, **21** features.
 
 **What questions (from above) can be answered using the data in this dataset?**
 
  - This dataset includes records of the date, time, location, depth, magnitude, and source of earthquakes of magnitude 5.5 or greater reported since 1965.It can be used as a comparison of data on earthquakes with other databases to draw conclusions about whether they are accurate and comprehensive.At the same time, a graph of earthquakes that have occurred every year or every decade can be drawn from this database for analysis and summary.These details can even be used to predict possible future earthquakes by comparing them with the real situation.
 
-# **US Weather Events (2016 - 2020)**
+### **US Weather Events (2016 - 2020)**
 
 **How many observations (rows) are in your data?**
- - In “WeatherEvents_Jan2016-Dec2020.csv”, 1048878 observations. This data set is too large for the Excel grids. Some unloaded data was lost after opening.
+ - In “WeatherEvents_Jan2016-Dec2020.csv”, **1048878** observations. This data set is too large for the Excel grids. Some unloaded data was lost after opening.
 
 **How many features (columns) are in the data?**
 
- - In “WeatherEvents_Jan2016-Dec2020.csv”, 13 features.
+ - In “WeatherEvents_Jan2016-Dec2020.csv”, **13** features.
 
 **What questions (from above) can be answered using the data in this dataset?**
 
