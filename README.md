@@ -60,27 +60,27 @@ https://www.kaggle.com/sobhanmoosavi/us-weather-events
 
 
 
-#**Significant Earthquakes, 1965-2016**
--How many observations (rows) are in your data?
-In “database.csv”, 23412 observations.
--How many features (columns) are in the data?
-In “database.csv”, 21 features.
--What questions (from above) can be answered using the data in this dataset?
-This dataset includes records of the date, time, location, depth, magnitude,
-and source of earthquakes of magnitude 5.5 or greater reported since 1965.
-It can be used as a comparison of data on earthquakes with other databases
-to draw conclusions about whether they are accurate and comprehensive.
-At the same time, a graph of earthquakes that have occurred every year or
-every decade can be drawn from this database for analysis and summary.
-These details can even be used to predict possible future earthquakes by
-comparing them with the real situation.
+# **Significant Earthquakes, 1965-2016**
+**How many observations (rows) are in your data?**
 
-**US Weather Events (2016 - 2020)**
+ - In “database.csv”, 23412 observations.
 
-How many observations (rows) are in your data?
+**How many features (columns) are in the data?**
+
+ - In “database.csv”, 21 features.
+
+**What questions (from above) can be answered using the data in this dataset?**
+
+ - This dataset includes records of the date, time, location, depth, magnitude, and source of earthquakes of magnitude 5.5 or greater reported since 1965.It can be used as a comparison of data on earthquakes with other databases to draw conclusions about whether they are accurate and comprehensive.At the same time, a graph of earthquakes that have occurred every year or every decade can be drawn from this database for analysis and summary.These details can even be used to predict possible future earthquakes by comparing them with the real situation.
+
+# **US Weather Events (2016 - 2020)**
+
+**How many observations (rows) are in your data?**
  - In “WeatherEvents_Jan2016-Dec2020.csv”, 1048878 observations. This data set is too large for the Excel grids. Some unloaded data was lost after opening.
-How many features (columns) are in the data?
-In “WeatherEvents_Jan2016-Dec2020.csv”, 13 features.
+
+**How many features (columns) are in the data?**
+
+ - In “WeatherEvents_Jan2016-Dec2020.csv”, 13 features.
 
 **What questions (from above) can be answered using the data in this dataset?**
 
