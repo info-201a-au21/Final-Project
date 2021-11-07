@@ -37,9 +37,11 @@
 ## Finding Data
 
 **Where did you download the data (e.g., a web URL)?**
-https://www.kaggle.com/noaa/hurricane-database
-https://www.kaggle.com/usgs/earthquake-database
-https://www.kaggle.com/sobhanmoosavi/us-weather-events
+1. https://www.kaggle.com/noaa/hurricane-database
+
+2. https://www.kaggle.com/usgs/earthquake-database
+
+3. https://www.kaggle.com/sobhanmoosavi/us-weather-events
 
 **How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**
   - The dates are collected by researchers to analyze the appearance of earthquakes and weather events. Both databases of hurricanes (NOAA) and earthquakes (US geology survey) are made by officials. However, the database about US weather events is made by the individual (Sobhan Moosavi). All of the record special conditions that happen in a limited time period, which help researchers to examine the frequency, duration, and intensity of events.
