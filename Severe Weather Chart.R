@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 library(tidyverse)
 library("dplyr")
 library("ggplot2")
@@ -28,3 +29,6 @@ severe_weather_chart <- ggplot(data = weather_time_span) +
     x = "Severe Weather Type",
     y = "Mean Time Span (mins)"
   )
+=======
+
+>>>>>>> 8ff96cb5f98b9a6e4a314fd1f946fe244a5f4f6b
