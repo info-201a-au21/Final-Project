@@ -2,10 +2,11 @@ library(tidyverse)
 library("dplyr")
 library("ggplot2")
 library(lubridate)
-weather <- read.csv("~/Desktop/severe_weather.csv", stringsAsFactors = FALSE)
+weather <- read.csv("~/Desktop/WeatherEvents_Jan2016-Dec2020.csv", stringsAsFactors = FALSE)
 
 # Filter the "severe" level weather events
 weather_data <- weather %>%
+  filter(Severity == "Severe") %>%
   group_by(State) %>%
   summarise(num = length(Severity))
   
@@ -25,7 +26,7 @@ blank_theme <- theme_bw() +
     panel.border = element_blank()      # remove border around plot
   )
 
-ggplot(state_shape) +
+severe_weather_state_map <- ggplot(state_shape) +
   geom_polygon(
     mapping = aes(x = long, y = lat, group = group, fill = num),
     color = "white",
