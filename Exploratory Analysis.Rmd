@@ -10,11 +10,9 @@ source("Exploratory Analysis.R")
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## 
+## Introduction
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+In recent year, the US are suffering from the covid pandemic. Individuals pay plenty of attention on covid and ignore the significance of natural disasters such as earthquake, hurricane, and severe whether. To better understand the impact of these natural disaster, our team utilizes variable, table, and chart to show our understanding on comprehensiveness and relevance of catastrophs in the US.
 
 ```{r cars}
 summary(cars)
