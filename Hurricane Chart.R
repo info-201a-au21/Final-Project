@@ -1,6 +1,5 @@
-
-pacific <- read.csv("~/Desktop/Group_analysis/pacific.csv")
-atlantic <- read.csv("~/Desktop/Group_analysis/atlantic.csv")
+pacific <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/pacific.csv?token=AV3GE57P4SGI6ZRI24VRBRLBUVEWA")
+atlantic <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/atlantic.csv?token=AV3GE53CAQACJQKXE73BBFLBUVE2Q")
 library("ggplot2")
 library("dplyr")
 library(stringr)
