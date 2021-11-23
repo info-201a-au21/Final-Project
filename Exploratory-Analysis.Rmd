@@ -1,0 +1,58 @@
+---
+title: "Exploratory Analysis"
+author: "Haru, Julie, Victoria , Frances"
+date: "11/22/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+source("Hurricane Chart.R")
+source("Severe Weather Chart.R")
+source("table.R")
+source("Weather Map.R")
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+In recent year, the US are suffering from the covid pandemic. Individuals pay plenty of attention on covid and ignore the significance of natural disasters such as earthquake, hurricane, and severe whether. To better understand the impact of these natural disaster, our team utilizes variable, table, and chart to show our understanding on comprehensiveness and relevance of catastrophs in the US.
+
+## Summary
+
+## Table
+
+## Chart1.1
+This chart shows that the time span of each Pacific hurricane from 1949 to 2015, and the color of the points shows the intensity of hurricane.
+```{r pacifi hurricane, echo=FALSE}
+chart_pacific
+```
+
+From this chart, we can find out that the time span of Pacific hurricane **polarizes**. Time span of most hurricanes are less than **25** days or longer than **62.5** days. Moreover, there is an increasing number of long-time hurricane since **1970**.
+
+## Chart1.2
+This chart shows that the time span of each Atlantic hurricane from 1851 to 2013, and the color of the points shows the intensity of hurricane.
+```{r atlantic hurricane, echo=FALSE}
+chart_atlantic
+```
+
+From this chart, we can find out that the density of Atlantic hurricane polarizes. Time span of most hurricanes are less than **1.25** days or longer than **10** days. Moreover, the intensity of hurricane became greater since **1960**.
+
+_From two charts, we can find out that the Pacific hurricane have more occurrences and longer time span._
+
+
+## Chart2
+```{r severe weather chart, echo=FALSE}
+severe_weather_chart
+```
+
+## Chart3
+```{r Map, echo=FALSE}
+severe_weather_state_map
+```
+
+
+
+
+
+
+

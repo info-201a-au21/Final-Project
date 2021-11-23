@@ -1,0 +1,114 @@
+---
+title: "Exploratory Analysis"
+author: "Haru, Julie, Victoria , Frances"
+date: "11/22/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+source("Hurricane Chart.R")
+source("Severe Weather Chart.R")
+source("table.R")
+source("Weather Map.R")
+source("Exploratory Analysis .R")
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+In recent year, the US are suffering from the covid pandemic. Individuals pay plenty of attention on covid and ignore the significance of natural disasters such as earthquake, hurricane, and severe whether. To better understand the impact of these natural disaster, our team utilizes variable, table, and chart to show our understanding on comprehensiveness and relevance of catastrophs in the US.
+
+## Summary
+
+According to our calculation, the most frequent weather condition is "cold". Taxis, __(`r max_state_name`)__ has the most frequent time duration of cold, which is __`r max_state_num`__.
+
+The mean time span of Pacific hurricane is __`r mean_pacific_time`__ days, and the mean time span of Atlantic hurricanes is __`r mean_atlantic_time`__.
+
+The highest number of disaster, combined with Atlantic hurricanes, Pacific hurricanes 
+and earthquake is __`r high_year_disaster_hurricane_earthquake`__.
+
+The highest number of year change greater than 0, which means the year has increased compare to last year, is __`r high_year_change`__
+
+
+
+
+
+
+
+## Table
+```{r pacific hurricane, echo=FALSE, results = 'asis'}
+library(knitr)
+kable(merge_disaster, caption = "Summary of Each Disaster") 
+```
+This table shows the num of three disaster in a overlapping years
+
+Purpose
+We want to find, on a same year. How many disaster has happened for Atlantic hurricane, pacific hurricane and earthquake. And we want find if there are any relationship between these three type of disaster.
+
+Insight
+From the table we find the highest number of Atlantic hurricane occurred in __2005__, while highest number of pacific hurricane occurred in __1992__. Also, highest number of earthquake is occurred in __2011__. So there are no big relationship between these three type of disaster.
+
+## Chart1.1 Time Span of Pacific Hurricane from 1949 to 2015
+
+This chart shows that the time span of each Pacific hurricane from 1949 to 2015, and the color of the points shows the intensity of hurricane.
+```{r pacifi hurricane, echo=FALSE}
+chart_pacific
+```
+
+From this chart, we can find out that the time span of Pacific hurricane **polarizes**. Time span of most hurricanes are less than **25 days** or longer than **62.5** days. Moreover, there is an increasing number of long-time hurricane since **1970**.
+
+## Chart1.2 Time Span of Atlantic Hurricane from 1851 to 2013
+This chart shows that the time span of each Atlantic hurricane from 1851 to 2013, and the color of the points shows the intensity of hurricane.
+
+```{r atlantic hurricane, echo=FALSE}
+chart_atlantic
+```
+
+From this chart, we can find out that the density of Atlantic hurricane **polarizes**. Time span of most hurricanes are less than **1.25** days or longer than **10** days. Moreover, the intensity of hurricane became greater since **1960**.
+
+_From two charts, we can find out that the Pacific hurricane have more occurrences and longer time span._
+
+
+## Chart2: Mean Time Span of Sever Weather in U.S. (2016-2020)
+```{r severe weather chart, echo=FALSE}
+severe_weather_chart
+```
+
+This chart shows the average time span (in minutes) of severe weather in the United States over the period 2016-2020. It shows 3 severe weather types.
+
+
+Purpose
+
+Considering the different types of weather in the United States, this chart enables us to compare the average duration of various severe weather types so that we can understand which type lasts the longest. Likewise, this chart allows us to better prevent and predict natural weather disasters in the future by showing the duration of the three severe weather types.
+
+Insight
+
+* The Cold Type had an average time span of nearly 425 minutes (7 hours), significantly higher than the other two weather types.
+  
+    + This may indicate that heavy snow is the longest lasting severe natural disaster. Prolonged periods of heavy snowfall can cause hazards to the United States such as transportation disruptions or untimely food supplies.
+  
+* The average time span for both Fog Type and Storm Type is close to 100 minutes.
+    + This may indicate that Fog and Storm, although short in duration, are serious hazards. They are more in need of accurate prediction and preparedness to facilitate the reduction of large-scale natural disasters.
+
+## Chart3
+```{r Map, echo=FALSE}
+severe_weather_state_map
+```
+
+The chart visualizes the total number of severe weathers in the U.S. on each continent between 2016-2020 in the form of a map, where the shades of color represent the size of the total.
+
+Purpose
+
+We would like to visualize the distribution of severe weather severity for each continent in the United States. And, whether severe natural weather is related to geographic location. We would assume that coastal areas are more susceptible to severe days of natural weather.
+
+Insight
+
+The number of severe natural hazards is generally higher across continents in the coastal regions of the United States.
+
+Texas is the continent with the highest total number of severe weather.
+
+
+
+
+
+
