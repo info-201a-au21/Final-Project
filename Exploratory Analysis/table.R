@@ -7,9 +7,9 @@ library(tidyverse)
 library(stringr)
 
 ## read data
-pacific <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/pacific.csv?token=AV3GE57P4SGI6ZRI24VRBRLBUVEWA")
-atlantic <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/atlantic.csv?token=AV3GE53CAQACJQKXE73BBFLBUVE2Q")
-earthquake <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/database.csv?token=AV3GE57BLZ2SUTXE6NEQULLBUVFBE")
+pacific <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/pacific.csv?token=AV3GEWQGJFYAKOJIMOEZJW3BXE3M4")
+atlantic <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/atlantic.csv?token=AV3GEWQVZCQY34C4HAMCMW3BXE3OI")
+earthquake <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/database.csv?token=AV3GEWQBS2333ULY5UKMMITBXE3P6")
 
 ## extract num
 earthquake_num <- earthquake %>% 
@@ -34,3 +34,8 @@ pacific_num <- pacific %>%
 merge_disaster <- atlantic_num %>%
   inner_join(pacific_num) %>%
   inner_join(earthquake_num)
+colnames(merge_disaster) <- c("Year",
+                              "Number of Atlantic",
+                              "Number of Pacific", 
+                              "Number of Earthquake")
+merge_disaster <-  merge_disaster[36:51,]
