@@ -34,8 +34,10 @@ pacific_num <- pacific %>%
 merge_disaster <- atlantic_num %>%
   inner_join(pacific_num) %>%
   inner_join(earthquake_num)
-colnames(merge_disaster) <- c("Year",
+disaster <-  merge_disaster[36:51,]
+colnames(disaster) <- c("Year",
                               "Number of Atlantic",
                               "Number of Pacific", 
                               "Number of Earthquake")
-merge_disaster <-  merge_disaster[36:51,]
+
+
