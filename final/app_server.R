@@ -24,8 +24,8 @@ weather_data2 <- weather %>%
   mutate(year = paste0("20", year_two))
 
 # hurricane
-pacific <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/pacific.csv?token=AV3GE52KCVBOAL44PP6E3JTBWWXLG")
-atlantic <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/atlantic.csv?token=AV3GE54KQYSNZGEXMDHGJL3BWWXM2")
+pacific <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/pacific.csv?token=AV3GE53O3FO7MYMTT4GREI3BX3V5E")
+atlantic <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/atlantic.csv?token=AV3GE57MO4EGZBYP3E4WAK3BX3V7U")
 pacific <- pacific %>%
   select(ID, Name, Date, Latitude, Longitude, Maximum.Wind)
 atlantic <- atlantic %>%
