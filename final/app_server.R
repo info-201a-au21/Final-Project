@@ -17,7 +17,7 @@ library("mapproj")
 
 ## read data
 # weather map
-weather <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/severe_weather.csv?token=AV3GE54YQV2T5KWQURXVZN3BXFRRA", stringsAsFactors = FALSE)
+weather <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/severe_weather.csv?token=AV53J63L5MHHVPE5APSNEIDBY2HSG", stringsAsFactors = FALSE)
 weather_data2 <- weather %>%
   mutate(year_time = (gsub("[^()]*\\/", "", StartTime.UTC.))) %>%
   mutate(year_two = str_sub(year_time, 1, 2)) %>%
@@ -86,7 +86,7 @@ weather_time_span <- weather_data %>%
   summarise(mean_time_span = as.numeric(mean(time_span)))
 
 # Table
-earthquake <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/database.csv?token=AV3GEWUJZJ4S3GQQNDUNKJTBXERTI")
+earthquake <- read.csv("https://raw.githubusercontent.com/info-201a-au21/Final-Project/main/dataset/database.csv?token=AV53J63IDEJYGMAFDVIAGZTBY2HUW")
 # extract num
 earthquake_num <- earthquake %>%
   mutate(year = as.numeric(gsub("[^()]*\\/", "", Date))) %>%
